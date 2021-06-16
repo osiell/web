@@ -8,7 +8,7 @@ odoo.define('web_widget_timepicker', function (require) {
     var TimePickerField = common.AbstractField.extend(common.ReinitializeFieldMixin, {
         is_field_number: true,
         template: "TimePickerField",
-        internal_format: 'float_time',
+        internal_format: 'char',
         widget_class: 'o_form_field_time',
         events: {
             'change input': 'store_dom_value',
